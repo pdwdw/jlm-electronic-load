@@ -2,7 +2,7 @@
 #include "icons.h"
 
 
-ValueEditWidget::ValueEditWidget(Adafruit_GFX& gfx, const char* suffix)
+ValueEditWidget::ValueEditWidget(JLMBackBuffer& gfx, const char* suffix)
     : EditWidget(gfx, nullptr, suffix)
 {
     _setValue(m_value);

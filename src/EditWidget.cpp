@@ -1,6 +1,6 @@
 #include "EditWidget.h"
 
-EditWidget::EditWidget(Adafruit_GFX& gfx, const char* string, const char* suffix)
+EditWidget::EditWidget(JLMBackBuffer& gfx, const char* string, const char* suffix)
 	: WidgetBase(gfx)
 {
 	m_string = string ? string : "";

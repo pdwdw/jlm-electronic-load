@@ -1,6 +1,6 @@
 #include "GraphWidget.h"
 
-GraphWidget::GraphWidget(Adafruit_GFX& gfx, size_t capacity)
+GraphWidget::GraphWidget(JLMBackBuffer& gfx, size_t capacity)
 	: WidgetBase(gfx)
 	, m_capacity(std::max(capacity, 50u))
 {
@@ -165,7 +165,7 @@ void GraphWidget::render()
 			int16_t y = position.y + m_h - int16_t(((point.value - minValue) * invRange) * m_h);
 			if (index > 0)
 			{
-				m_gfx.drawLine(lastX, lastY, x, y, plot.color);
+				m_gfx.drawAALine(lastX, lastY, x, y, plot.color);
 			}
 			lastX = x;
 			lastY = y;

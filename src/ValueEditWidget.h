@@ -6,7 +6,7 @@
 class ValueEditWidget : public EditWidget
 {
 public:
-	ValueEditWidget(Adafruit_GFX& gfx, const char* suffix);
+	ValueEditWidget(JLMBackBuffer& gfx, const char* suffix);
 
     void setRange(float min, float max);
 	void setDecimals(uint8_t decimals);

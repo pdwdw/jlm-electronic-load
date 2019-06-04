@@ -10,7 +10,7 @@
 #include "DurationEditWidget.h"
 #include "ValueEditWidget.h"
 #include "Button.h"
-#include "DeltaBitmap.h"
+#include "JLMBackBuffer.h"
 #include "AiEsp32RotaryEncoder.h"
 #include "Fonts/SansSerif_plain_10.h"
 #include "Fonts/SansSerif_bold_10.h"
@@ -24,7 +24,7 @@
 #include "Fonts/SansSerif_bold_32.h"
 #include "icons.h"
 
-extern DeltaBitmap s_canvas;
+extern JLMBackBuffer s_canvas;
 extern Button s_button;
 extern int16_t s_windowY;
 extern AiEsp32RotaryEncoder s_knob;

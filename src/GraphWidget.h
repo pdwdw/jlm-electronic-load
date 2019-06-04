@@ -7,7 +7,7 @@
 class GraphWidget : public WidgetBase
 {
 public:
-	GraphWidget(Adafruit_GFX& gfx, size_t capacity);
+	GraphWidget(JLMBackBuffer& gfx, size_t capacity);
 	uint8_t addPlot(const char* name, uint16_t color, float minRange);
 	void setPlotVisible(uint8_t plotIndex, bool visible);
 	bool isPlotVisible(uint8_t plotIndex) const;
